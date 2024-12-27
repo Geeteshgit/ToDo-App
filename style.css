@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik',serif;
+}
+
+ul li{
+    list-style: none;
+}
+
+main{
+    width: 40%;
+    margin: 3em auto;
+}
+
+#container{
+    width: 100%;
+    border: 1px solid gray;
+    border-radius: 20px;
+}
+
+#stats-container{
+    width: 100%;
+    padding: 1em 2em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#stats-container #stats-content{
+    width: 70%;
+}
+
+#stats-container #stats-content h2{
+    font-size: 2rem;
+}
+
+#stats-container #stats-content p{
+    font-size: 1.25rem;
+}
+
+#stats-count{
+    background-color: #111;
+    color: white;
+    height: 100px;
+    width: 100px;
+    padding: 1em;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#input-container #inputs{
+    width: 100%;
+    margin: 1em 0;
+}
+
+#input-container form{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#input-container #input-task{
+    width: 92%;
+    font-size: 1rem;
+    padding: 0.5em 1em;
+    border-radius: 100px;
+    outline: none;
+    border: 1px solid gray;
+    
+}
+
+#input-container #add-task{
+    font-size: 1.5rem;
+    height:40px;
+    width: 40px;
+    background-color: #111;
+    color: white;
+    border: 1px solid gray;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+#add-task:hover{
+    transform: scale(1.1);
+}
+
+#task-list .task{
+    margin: 0.75em 0;
+}
+
+#task-content{
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+}
+
+#task-content p{
+    padding-right: 0.5em;
+}
+
+#task-content input[type = "checkbox"]{
+    height: 20px;
+    width: 20px;
+}
+
+input[type = "checkbox"]:checked~p{
+    text-decoration: line-through;
+}
+
+.task{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid gray;
+    border-radius: 15px;
+    font-size: 1.25rem;
+    padding: 0.5em 0.75em;
+}
+
+#operations{
+    display: flex;
+    gap: 0.25em;
+}
+
+#operations i{
+    font-size: 1rem;
+    padding: 0.5em;
+    background-color: #000;
+    color: white;
+    border-radius: 50%;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+#operations i:hover{
+    transform: scale(1.1);
+}
